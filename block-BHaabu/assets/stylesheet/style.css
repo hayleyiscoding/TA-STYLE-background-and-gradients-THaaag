@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles */
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    background:
+        linear-gradient(rgb(255, 255, 255, 0.5), rgba(255,255,255,0.5)),
+        url("../media/bee.jpg")
+        no-repeat
+        0 0/cover;
+}
+
+/* General */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 32px;
+}
+.box {
+    border-radius: 8px;
+    flex: 0 1 30%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    Justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons */
+
+/* Header and Fonts */
+
+/* Clearfix */
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* Color Codes */
+/* #E0B0FF - light purple*/
+
+/* Header */
+.header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Box */
+.box p, .section2 p {
+   font-size: 25px;
+   color:black;
+}
+.box1 {
+ background:
+     #E0B0FF;
+}
+.box2 {
+    background:
+        linear-gradient(to left,#E0B0FF, #ffffff);
+}
+.box3 {
+    background:
+        radial-gradient(#E0B0FF, white);
+}
+
+/* Section 3 */
+.big-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+.section2 {
+    width: 900px;
+    border-radius: 8px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(to bottom right, transparent,rgba(224, 179, 255, 0.9)),
+        url("../media/cosmos.jpg")
+        0 0/cover
+        no-repeat;
+}
